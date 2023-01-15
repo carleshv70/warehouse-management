@@ -1,0 +1,5 @@
+workspace/.metadata/.lock
+workspace/.metadata/.log
+workspace/.metadata/version.ini
+workspace/.metadata/.plugins/**
+workspace/TechnnicalTest-Mecalux/.mvn/wrapper/maven-wrapper.jar
