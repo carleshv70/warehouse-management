@@ -1,0 +1,41 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Warehouses</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">List of warehouses</h5>
+      <div class="my-2 text-left">
+        <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/warehouses/add']">
+          Create warehouse
+        </button>
+      </div>
+      <div *ngIf="getWarehouses().length == 0" class="alert alert-info">
+        There are not any registre in the table!
+      </div>
+      <table class="table table-bordered table-striped" *ngIf="getWarehouses().length>0">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>UUID</th>
+            <th>Client</th>
+            <th>Family</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of getWarehouses()">
+            <td >{{ item.id | number}}</td>
+            <td>{{ item.uuid }}</td>
+            <td>{{ item.client | uppercase }}</td>
+            <td>{{ item.family }}</td>
+            <td>{{ item.size | number}}</td>
+            <!--
+            <td>
+              <button type="button" name="editar" [routerLink]="['/clientes/form', cliente.id]" class="btn btn-primary btn-sm">editar</button>
+            </td>
+            <td>
+              <button type="button" name="eliminar" (click)='delete(cliente)' class="btn btn-danger btn-sm">eliminar</button>
+            </td>-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
