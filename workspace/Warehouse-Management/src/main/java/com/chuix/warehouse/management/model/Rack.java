@@ -1,19 +1,29 @@
 package com.chuix.warehouse.management.model;
 
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.Size;
+
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import lombok.Data;
 
-@Entity(name = "RACKS")
+@Entity
+@Table(name = "RACKS")
+@EntityListeners(AuditingEntityListener.class)
 @Data
 public class Rack {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY )
+	@GeneratedValue
 	@Column(name = "ID")
 	private Integer id;
 	
@@ -27,4 +37,10 @@ public class Rack {
 	@Column(unique = true, nullable = false, name = "TYPE")
 	@Size(max = 1)
 	private String type;
+	
+    @CreatedDate
+    private Timestamp createdDate;
+
+    @CreatedBy
+    private String createdBy;
 }
