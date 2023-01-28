@@ -1,13 +1,13 @@
-package com.chuix.technnicalTest.Mecalux;
+package com.chuix.warehouse.management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TechnnicalTestMecaluxApplication {
+public class WarehousesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TechnnicalTestMecaluxApplication.class, args);
+		SpringApplication.run(WarehousesApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.chuix.technnicalTest.Mecalux;
+package com.chuix.warehouse.management.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.chuix.technnicalTest.Mecalux.config;
+package com.chuix.warehouse.management.config;
 
 public class Constants {
 

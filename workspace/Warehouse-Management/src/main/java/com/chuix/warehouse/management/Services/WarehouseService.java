@@ -1,8 +1,8 @@
-package com.chuix.technnicalTest.Mecalux.Services;
+package com.chuix.warehouse.management.Services;
 
 import java.util.List;
 
-import com.chuix.technnicalTest.Mecalux.model.Warehouse;
+import com.chuix.warehouse.management.model.Warehouse;
 
 public interface WarehouseService {
 

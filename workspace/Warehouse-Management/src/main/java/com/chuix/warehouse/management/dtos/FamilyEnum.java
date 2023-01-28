@@ -1,4 +1,4 @@
-package com.chuix.technnicalTest.Mecalux.dtos;
+package com.chuix.warehouse.management.dtos;
 
 
 public enum FamilyEnum {

@@ -1,12 +1,12 @@
-package com.chuix.technnicalTest.Mecalux.controller;
+package com.chuix.warehouse.management.controller;
 
-import static com.chuix.technnicalTest.Mecalux.config.Constants.ITEM_ISNT_EXIST;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.PATH_CREATE_ACTION;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.PATH_DELETE_ACTION;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.PATH_GETALL_ACTION;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.PATH_GET_ACTION;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.PATH_UPDATE_ACTION;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.PATH_WAREHOUSE_BASE;
+import static com.chuix.warehouse.management.config.Constants.ITEM_ISNT_EXIST;
+import static com.chuix.warehouse.management.config.Constants.PATH_CREATE_ACTION;
+import static com.chuix.warehouse.management.config.Constants.PATH_DELETE_ACTION;
+import static com.chuix.warehouse.management.config.Constants.PATH_GETALL_ACTION;
+import static com.chuix.warehouse.management.config.Constants.PATH_GET_ACTION;
+import static com.chuix.warehouse.management.config.Constants.PATH_UPDATE_ACTION;
+import static com.chuix.warehouse.management.config.Constants.PATH_WAREHOUSE_BASE;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,9 +30,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.chuix.technnicalTest.Mecalux.Services.WarehouseService;
-import com.chuix.technnicalTest.Mecalux.dtos.WarehouseDto;
-import com.chuix.technnicalTest.Mecalux.mapper.WarehouseMapper;
+import com.chuix.warehouse.management.Services.WarehouseService;
+import com.chuix.warehouse.management.dtos.WarehouseDto;
+import com.chuix.warehouse.management.mapper.WarehouseMapper;
 
 
 @Controller

@@ -1,4 +1,4 @@
-package com.chuix.technnicalTest.Mecalux.model;
+package com.chuix.warehouse.management.model;
 
 import java.io.Serializable;
 

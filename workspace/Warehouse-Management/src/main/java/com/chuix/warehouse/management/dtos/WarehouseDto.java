@@ -1,6 +1,6 @@
-package com.chuix.technnicalTest.Mecalux.dtos;
+package com.chuix.warehouse.management.dtos;
 
-import static com.chuix.technnicalTest.Mecalux.config.Constants.FIELD_CANNOT_BE_NULL;
+import static com.chuix.warehouse.management.config.Constants.FIELD_CANNOT_BE_NULL;
 
 import java.io.Serializable;
 

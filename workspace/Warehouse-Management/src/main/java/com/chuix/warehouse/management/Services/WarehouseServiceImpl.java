@@ -1,8 +1,7 @@
-package com.chuix.technnicalTest.Mecalux.Services;
+package com.chuix.warehouse.management.Services;
 
-import static com.chuix.technnicalTest.Mecalux.config.Constants.DATA_ISNT_VALID;
-import static com.chuix.technnicalTest.Mecalux.config.Constants.ITEM_ISNT_EXIST;
-import com.chuix.technnicalTest.Mecalux.mapper.WarehouseMapper;
+import static com.chuix.warehouse.management.config.Constants.DATA_ISNT_VALID;
+import static com.chuix.warehouse.management.config.Constants.ITEM_ISNT_EXIST;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,9 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.chuix.technnicalTest.Mecalux.model.Warehouse;
-import com.chuix.technnicalTest.Mecalux.repository.RackRepository;
-import com.chuix.technnicalTest.Mecalux.repository.WarehouseRepository;
+import com.chuix.warehouse.management.mapper.WarehouseMapper;
+import com.chuix.warehouse.management.model.Warehouse;
+import com.chuix.warehouse.management.repository.RackRepository;
+import com.chuix.warehouse.management.repository.WarehouseRepository;
 
 @Service
 public class WarehouseServiceImpl implements WarehouseService {
